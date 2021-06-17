@@ -163,6 +163,13 @@
       background: #1f2024;
       margin: 0 30px;
       clear: both;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      animation: easeIn 0.5s ease-in-out;
+      -webkit-animation: easeIn 0.5s ease-in-out;
+      -moz-animation: easeIn ease-in-out 0.5s;
+      -o-animation: easeIn ease-in-out 0.5s;
+      -ms-animation: easeIn ease-in-out 0.5s;
    }
 
    ul#nav li {
@@ -215,7 +222,16 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic-cont {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+   }
+   #about .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+   }
    #about .download .button {
       width: 100%;
       text-align: center;
@@ -372,11 +388,58 @@
 
 }
 
+/* keyframes */
 
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 
-
-
+@keyframes easeIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
