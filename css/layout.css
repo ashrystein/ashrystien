@@ -204,12 +204,13 @@ ul#nav li.current a { color: #F06000; }
 #about p {
    line-height: 30px;
    color: #7A7A7A;
+   font-weight:600;
 }
 #about .profile-pic {
    position: relative;
    width: 200px;
    height: 210px;
-   border-radius: 100%;
+   border-radius: 10px;
    resize: none;
 }
 #about .contact-details { width: 41.66667%; }
